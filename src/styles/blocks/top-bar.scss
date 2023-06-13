@@ -1,12 +1,24 @@
 /* #region top-bar */
 .top-bar {
-  padding: 24px 20px;
+  padding-block: 24px;
+
+  @include contentPaddingInline();
+
+  @include onTablet() {
+    padding-block: 36px;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__logo {
     display: flex;
+
+    @include onTablet () {
+      height: 56px;
+      width: 187px;
+    }
   }
 
   &__icons {
