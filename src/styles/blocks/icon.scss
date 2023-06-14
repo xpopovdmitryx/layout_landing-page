@@ -5,21 +5,27 @@
   width: 24px;
   background-size: cover;
 
+  @include hover(transform, scale(1.2));
+
   @include onTablet() {
     height: 32px;
     width: 32px;
   }
 
   &--phone {
-    background-image: url(../icons/icon-phone-call.png);
+    background-image: url(../icons/icon-phone-call.svg);
   }
 
   &--menu {
-    background-image: url(../icons/icon-burger-menu.png);
+    background-image: url(../icons/icon-burger-menu.svg);
+
+    &:hover {
+      background-image: url(../icons/icon-burger-menu-hover.svg);
+    }
   }
 
   &--close {
-    background-image: url(../icons/icon-close.png);
+    background-image: url(../icons/icon-close.svg);
   }
 }
 /* #endregion */

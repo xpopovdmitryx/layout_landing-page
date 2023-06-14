@@ -9,7 +9,7 @@
   &__content {
     padding-block: 24px 113px;
 
-    @include onTablet () {
+    @include onTablet() {
       padding-block: 0 157px;
     }
 
