@@ -10,6 +10,11 @@
     background-image: url(../images/header-bg-tablet-2x.png);
   }
 
+  @include onDesktop() {
+    background-image: url(../images/header-bg-desktop-0.5x.png);
+    background-size: cover;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
